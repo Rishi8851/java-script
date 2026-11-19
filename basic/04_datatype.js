@@ -28,3 +28,25 @@ const user = {
     }
     
     myfun()
+
+
+    // Stack(Premitive) and Heap(Non-Primitive) memory allocation
+
+    let name = "rishi"
+    let name2 = name;
+    
+    name2 = "Rishabh"
+
+    console.log(name) // rishi
+    console.log(name2) // Rishabh
+               
+    let user1 = {
+        name: "John",
+        age: 30
+    }
+// heap memory allocation
+    let user2 = user1;
+    user2.name = "rishi";
+
+    console.log(user1.name) // Jane
+    console.log(user2.name) // Jane
